@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded",function() {
   1) Use a for loop to create a lot of <a-dodecahedron> 
   2) Change each <a-dodecahedron>'s position to a random x, y, and z location
   3) Change each <a-dodecahedron>'s to a random color.  Hint: Use rgb( ) and string interpolation 
-  Math.floor(Math.random() * (max - min + 1)) + min;
+  Random Formula: Math.floor(Math.random() * (max - min + 1)) + min;
   */
   
   for (let i=0;i<100;i++){
@@ -32,9 +32,9 @@ window.addEventListener("DOMContentLoaded",function() {
 
     dodecahedron.setAttribute("position",{x:x,y:y,z:z});
 
-    let r = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
-    let g = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
-    let b = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
+    let r = Math.floor(Math.random() * (256));
+    let g = Math.floor(Math.random() * (256));
+    let b = Math.floor(Math.random() * (256));
 
     dodecahedron.setAttribute("color", `rgb(${r},${g},${b})`);
 
