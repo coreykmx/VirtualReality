@@ -40,10 +40,10 @@ function createCloud(x,y,z){
   let sphere1 = document.createElement("a-sphere");
   let sphere2 = document.createElement("a-sphere");
   let sphere3 = document.createElement("a-sphere");
-  sphere1.setAttribute("position", {x:-2.5,y:-0.5,z:0});
+  sphere1.setAttribute("position", {x:-1.5,y:-0.5,z:0});
   sphere2.setAttribute("position", {x:0,y:0,z:0});
-  sphere3.setAttribute("position", {x:2.5,y:-0.5,z:0});
-  sphere2.setAttribute("radius", 2);
+  sphere3.setAttribute("position", {x:1.5,y:-0.5,z:0});
+  sphere2.setAttribute("radius", 1.5);
   entity.setAttribute("position",{x:x,y:y,z:z});
   entity.append(sphere1);
   entity.append(sphere2);
