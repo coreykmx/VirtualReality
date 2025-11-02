@@ -1,9 +1,11 @@
 class Rocket{
   constructor(x,y,z){
+    this.x = x;
+    this.z = z;
     this.y = y;
-    this.dy = 0.1;
+    
     this.obj = document.createElement("a-entity");
-    this.obj.setAttribute("position",{x:x,y:y,z:z});
+    
     let base = document.createElement("a-cylinder");
     base.setAttribute("height",25);
     base.setAttribute("radius",1.5);
@@ -106,11 +108,13 @@ class Rocket{
     this.obj.append(bot4);
     this.obj.append(bot5);
     this.obj.append(bot6);
+    this.obj.setAttribute("position",{x:this.x, y:this.y , z:this.z});
     scene.append(this.obj);
   }
 
-  fly(){
-    this.y+=this.dy;
-    this.obj.setAttribute("position",{x:x, y:this.y, z:z});
+  launch(){
+    this.dy = rnd(0.1,2);
+    this.y += this.dy;
+    this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z});
   }
 }

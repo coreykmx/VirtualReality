@@ -1,21 +1,24 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let scene;
-let rocket = [];
+let scene, rocket;
+let rockets = [];
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene"); 
 
   for(let i=0;i<100;i++){
-    let x = rnd(-1000,1000);
-    let z = rnd(-1000,1000);
-    rocket[i] = new Rocket(x,0,z);
+    x = rnd(-100,100);
+    y = rnd(-75,0);
+    z = rnd(-100,100);
+    rocket = new Rocket(x, y, z);
+    rockets.push(rocket);
   }
   loop();
+
 })
 
 function loop(){
-  for(let i=0;i<100;i++){
-    rocket[i].fly();
+  for(let rocket of rockets){
+    rocket.launch();
   }
 
   window.requestAnimationFrame( loop );
