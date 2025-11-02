@@ -5,6 +5,7 @@ class Snowflake{
     this.dy = 0.01;
     this.obj = document.createElement("a-sphere");
     this.obj.setAttribute("position",{x:x,y:y,z:z});
+    scene.append(this.obj);
   }
 
   //Challenge 6: Create a function fall() which decreases y by dy and updates the Snowflake object to that y position
