@@ -61,10 +61,11 @@ class Ufo{
     }
 
     invade(){
-        this.dy = rnd(1,2);
-        this.y -= this.dy;
-        if (this.y < 1){
+        if (this.y < 3){
         this.dy = 0;
+        }else{
+            this.dy = rnd(1,2);
+            this.y -= this.dy;
         }
         this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
 
