@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded",function() {
     scene.append(building);
   } 
 
-  for(let i=0;i<2;i++){
+  for(let i=0;i<100;i++){
     x = rnd(-125,125);
     y = rnd(-75,0);
     z = rnd(-125,125);
@@ -62,7 +62,7 @@ window.addEventListener("DOMContentLoaded",function() {
   }
 
   
-  for(let i=0;i<10;i++){
+  for(let i=0;i<25;i++){
     x = rnd(-125,125);
     y = rnd(200,250);
     z = rnd(-125,125);
