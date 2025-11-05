@@ -10,8 +10,13 @@ window.addEventListener("DOMContentLoaded",function() {
 
 function loop(){
   target.a += target.da;
-
+  target.object3D.rotation.x = target.a;
   target.setAttribute("rotation",{x:target.a, y:0, z: 0});
 
+  if(target.a <= -90 || target.a >= 20){
+    target.da *= 0;
+  }
+  
+  
   window.requestAnimationFrame( loop );
 }
