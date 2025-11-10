@@ -2,7 +2,7 @@ class Rock{
   constructor(x,y,z){
     this.x = x;
     this.y = y;
-    this.z = y;
+    this.z = z;
 
     this.obj = document.createElement("a-dodecahedron");
     this.obj.setAttribute("color","gray");

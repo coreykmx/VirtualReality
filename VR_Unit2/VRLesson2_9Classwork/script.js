@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded",function() {
         new Block(c,1,r)
       }
       else if(cols[c] == "T"){
-        new Tree(2*c,1,2*r);
+        new Tree(c,1,r);
       }else if(cols[c]=="o"){
         new Rock(c,1,r)
       }

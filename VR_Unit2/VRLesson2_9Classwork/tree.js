@@ -2,7 +2,7 @@ class Tree{
   constructor(x,y,z){
     this.x = x;
     this.y = y;
-    this.z = y;
+    this.z = z;
 
     this.obj = document.createElement("a-cone");
     this.obj.setAttribute("color","green");
