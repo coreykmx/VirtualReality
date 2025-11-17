@@ -86,6 +86,9 @@ window.addEventListener("DOMContentLoaded",function() {
       if(cols[c] == "m"){
         new Monster(4*c,5,4*r);
       }
+      if(cols[c] == "l"){
+        new Light(c,10,r);
+      }
     }
     /* Challenge 4
        Make an appropriate decision based on the characters you chose to enter 
