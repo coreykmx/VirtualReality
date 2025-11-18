@@ -13,8 +13,8 @@ class Wall{
     let baseboard = document.createElement("a-box");
     baseboard.setAttribute("scale","4.1, 0.2, 4.1");
     baseboard.setAttribute("position",{x:x,y:y-4.9,z:z});
-    this.obj.append(wall)
-    this.obj.append(baseboard)
+    this.obj.append(wall);
+    this.obj.append(baseboard);
     scene.append(this.obj);
     
   }

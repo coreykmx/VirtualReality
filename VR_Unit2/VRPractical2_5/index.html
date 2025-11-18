@@ -4,6 +4,7 @@
     <script src="script.js"></script>
     <script src="wall.js"></script>
     <script src="monster.js"></script>
+    <script src="light.js"></script>
   </head>
   <body>
     <a-scene>
@@ -13,10 +14,11 @@
         -->
       <img src="wall.png" id="wall"></src>
       </a-assets>
-      <a-plane position="150 0 100" rotation="-90 0 0" width="304" height="204" color="#AAFFAA"></a-plane>
+      <a-plane position="150 0 100" rotation="-90 0 0" width="304" height="204" color="#92D492"></a-plane>
       
-      <a-block src="wall.png" position="150 0 100" scale="304 2 204"></a-block>
+      <a-box color="#80BD80" position="150 10.25 100" scale="304 0.5 204"></a-box>
+      <a-entity light="type: ambient; color: #808080"></a-entity>
       <a-sky src="#wall" repeat="10 10"></a-sky>
-      <a-camera wasd-controls="acceleration: 100; fly: true" position=" 0 1.5 0">
+      <a-camera wasd-controls="acceleration: 100; fly: true" position=" 0 10 0">
       </a-camera>
 </html>
