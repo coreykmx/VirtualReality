@@ -12,6 +12,7 @@ window.addEventListener("DOMContentLoaded",function() {
   carousel.addEventListener("mouseleave",function(){
     carousel.rotate = false;
   })  
+  
   balloon1 = document.getElementById("balloon1"); //blue
   balloon1.y = 5
   balloon1.dy = -0.05;
