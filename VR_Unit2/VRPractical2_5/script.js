@@ -11,14 +11,14 @@
 */
 
 let maze = [
-"m-lxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-"---x-------lx--x-----l--x--x---l-x----l------x-----l-----x-----l--x--x--x--x",
+"--lxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+"---xm------lx--x-----l--x--x---l-x----l------x-----l-----x-----l--x--x--x--x",
 "x--xxxxxxx--x--x--xxxx--x--xxxx--x--xxxx--x--xxxx--xxxxxxx--x--x--x--x--x--x",
 "x--x--x-l-----l------x--x-----x--x--x-----x-----x--x---l----x--x--l--x--l--x",
 "x--x--x--xxxxxxx--xxxxxxx--xxxx--x--x--xxxxxxx--x--xxxx--xxxxxxx--xxxxxxx--x",
-"x--l--x---l----x--x-------l---x--x--x--x--x----l------x-----x---l------l---x",
+"xm-l--x---l----x--x-------l---x--x--x--x--x----l------x-----x---l------l---x",
 "xxxx--xxxx--xxxxxxxxxx--x--x--x--xxxxxxx--xxxxxxx--xxxxxxx--xxxxxxxl-xxxxxxx",
-"x--x--x----------l------x--x-----x-----l-----------x----l------x--------x--x",
+"x--x--x----------l------x--x-----x-----l-----------x----l-----mx--------x--x",
 "x--x--x--xxxxxxxxxxxxxxxx--x--x--x--x--xxxxxxx--x--x--x--xxxx--xxxxxxxxxx--x",
 "x---l-----l-------x-----x--x--x--x--x--x--x-----x--x--x--l--x--------l-----x",
 "x--xxxxxxx--x--xxxxxxx--xxxx--x--x--xxxx--xxxxxxxxxxxxx--xxxxxxx--x--xxxxxxx",
@@ -36,7 +36,7 @@ let maze = [
 "x--x--x--xxxxxxx--xxxx--xxxx--xxxxxxx--xxxx--x--xxxx--xxxxxxxxxx--x--x--x--x",
 "x-----x-----x--x---------l----------x-----x--x--x--x-----x--x--l-----x----lx",
 "x--xxxxxxx--x--xxxxxxxxxxxxxxxx--x--x--xxxxxxxxxx--xxxxxxx--xxxx--xxxxxxxxxx",
-"x--x-----------l-----x--------x--x-----x--------x--x-----x-------l---x-----x",
+"x--xm----------l-----x--------x--x-----x--------x--x-----x-------l---x-----x",
 "x--x--xxxxxxxxxxxxxxxxxxx--xxxxxxxxxx--xxxxxxx--x--x--x--xxxx--xxxx--x--xl-x",
 "x-----x-----x-----x--------------x-----l--------x-----x--x-----x---l----x--x",
 "x--xxxxxxx--xxxx--x--xxxx--xxxx--x--xxxxxxx--xxxxxxx--xxxx--xxxxxxxxxxxxxxxx",
@@ -58,7 +58,7 @@ let maze = [
 "xxxx--xxxx--xxxx--x--x--xxxxxxxxxx--xxxxxxx--x--xxxxxxx--xxxx--xxxx--x--x--x",
 "x---l-x-----x--x-----x-----x--x----l------x--x-----x--------x--x--------x--x",
 "xxxx--xxxx--x--xl-x-lx--xxxx--x--xxxxxxxxxxxxx--xxxx--xxxxxxx--xxxx--x--xxxx",
-"x--------l-----x--x------l----------x--l-----x--x----l--------l---x--x--l--x",
+"x------m-l-----x--x------l---------mx--l-----x--x----l--------l---x--x--l--x",
 "x--xxxx--xxxx--x--x--xxxx--x--xxxxxxxxxxxxx--x--xxxxxxx--x--xxxxxxxxxxxxx--x",
 "x--x--l-----x--x--x--x-----x--l-----x-----l--------x---l-x-----l--x----l----",
 "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx---"

@@ -8,8 +8,9 @@ class Light{
         let l = document.createElement("a-box");
         l.setAttribute("scale","3, 0.1, 3");
         l.setAttribute("position",{x:x,y:y,z:z});
-        l.setAttribute("opacity",0.9);
-
+        l.setAttribute("color","white");
+        l.setAttribute("src","light.jpg");    
+        
         this.obj.append(l);
         scene.append(this.obj);
     }
