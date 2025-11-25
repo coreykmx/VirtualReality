@@ -3,6 +3,7 @@ class Rocket{
     this.x = x;
     this.z = z;
     this.y = y;
+    this.dy = 0.1;
     this.obj = document.createElement("a-entity");
     
     let base = document.createElement("a-cylinder");
@@ -108,9 +109,20 @@ class Rocket{
     this.obj.append(bot5);
     this.obj.append(bot6);
 
-    this.obj.setAttribute("position",{x:this.x, y:this.y , z:this.z});
+    this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z});
+    this.obj.addEventListener("click",()=>{
+      this.launch = true;
+    });
+
     scene.append(this.obj);
 
   }
 
+  fly(){
+    if(this.launch){
+      this.y += this.dy;
+      this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z});
+    }
+  }
+  
 }
