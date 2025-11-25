@@ -65,9 +65,13 @@ class Ufo{
     }
 
     invade(){
-        if(this.invade){
+        if(this.invading){
             this.y-=this.dy;
             this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
+                if (this.y < 3){
+                    this.dy = 0;
+                }
         }
     }
+
 }
