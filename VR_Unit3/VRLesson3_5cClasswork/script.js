@@ -23,10 +23,17 @@ function loop(){
      Note: Explore the Block class for an understanding of the 
      above two tasks.
   */
+  for(let block of blocks){
+    if(dart && distance(block.obj , dart.obj) < 1){
+      block.shot = true
+    }
+    block.shrink()
+  }
 
   if(dart){
     dart.fly();
   }
+  
   window.requestAnimationFrame(loop);
 }
 
