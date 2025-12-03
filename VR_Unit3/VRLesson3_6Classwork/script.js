@@ -21,22 +21,22 @@ window.addEventListener("DOMContentLoaded",function() {
   window.addEventListener("keydown",function(k){
     console.log(k.key);
     if (k.key == "1"){
-      gem.object3D.rotation.z += 45;
+      gem.object3D.rotation.z += 10;
     }
     else if (k.key == "2"){
-      gem.object3D.rotation.z += -45;
+      gem.object3D.rotation.z += -10;
     }
     else if (k.key == "3"){
-      gem.object3D.rotation.x += 45;
+      gem.object3D.rotation.x += 10;
     }
     else if (k.key == "4"){
-      gem.object3D.rotation.z += -45;
+      gem.object3D.rotation.z += -10;
     }
     else if (k.key == "5"){
-      gem.object3D.rotation.y += 45;
+      gem.object3D.rotation.y += 10;
     }
     else if (k.key == "6"){
-      gem.object3D.rotation.y += -45;
+      gem.object3D.rotation.y += -10;
     }
 
   })
@@ -48,5 +48,5 @@ window.addEventListener("DOMContentLoaded",function() {
     gem.object3D.rotation.y = 0;
     gem.object3D.rotation.z = 0;
   })
-  
+
 })
