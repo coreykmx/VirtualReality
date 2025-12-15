@@ -28,6 +28,7 @@ function loop(){
       block.shot = true
     }
     block.shrink()
+    console.log(block.shot)
   }
 
   if(dart){

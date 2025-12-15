@@ -7,21 +7,46 @@ window.addEventListener("DOMContentLoaded",function() {
 
   window.addEventListener("keydown",function(e){
     //User can only fire with they press the spacebar and have sufficient ammo
-    if(e.key == " " && ammo_count > 0  ){
+    if(e.key == " " && ammo_count > 0 ){
       bullet = new Bullet();
-      ammo_count--;
+      ammo_count--;      
     }
+    
   })
+
+  for(let i=0;i<10;i++){
+    x = rnd(-25,25);
+    z = rnd(-25,25);
+    enemies.push(new Monster(x,5,z));
+  }
   
   setTimeout(loop,100);
   setTimeout(countdown,100);
 })
 
 function loop(){
+
+  for(let enemy of enemies){
+    if(bullet && distance(bullet.obj , enemy.hitbox) < 4){
+      enemy.shot = true
+    } else{
+      enemy.shot = false
+    }
+
+    if(enemy.shot){
+      enemy_killed++;
+    }
+    
+    enemy.shrink();
+    console.log(enemy_killed);
+    console.log(enemy.shot);
+  }
+
   if(bullet){
     bullet.fire();
   }
- 
+
+
   window.requestAnimationFrame(loop);
 }
 
