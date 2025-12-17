@@ -11,6 +11,7 @@ window.onload = function(){
     let box = new Box(x,1,z);
     boxes.push(box);
   }
+  loop()
 }
 
 
@@ -19,10 +20,10 @@ function loop(){
      Make the boxes blast off
   */
   for(let b of boxes){
-    if(b.boom = true){
-    b.obj.Object3D.position.y += 1
-    }
+    b.blast();
+    console.log(b.boom) 
   }
+
   window.requestAnimationFrame( loop )
   
 }

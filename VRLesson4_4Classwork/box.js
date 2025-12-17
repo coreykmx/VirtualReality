@@ -1,6 +1,7 @@
 class Box{
  constructor(x,y,z){
    this.obj = document.createElement("a-box");
+   this.boom = false;
    /* Challenge
       Associate the fireball sound with the box and 
       enable it to play forever
@@ -10,10 +11,10 @@ class Box{
       Add an event listener that sets boom to true and
       plays the fireball sound effect
    */
-   this.obj.addEventListener("click",()=>{
-      this.boom = true
+   this.obj.onclick = ()=>{
+      this.boom = true;
       this.obj.components.sound.playSound();
-   })
+   }
    this.obj.setAttribute("position",{x:x,y:y,z:z});
    scene.append(this.obj);
  } 
