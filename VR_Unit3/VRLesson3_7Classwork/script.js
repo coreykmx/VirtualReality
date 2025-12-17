@@ -36,5 +36,5 @@ function loop(){
    is needed for the rest of the challenges.
 */
 function cameraoff(){
-  mainCamera.setAttribute("active",false);
+  mainCamera.setAttribute("active",true);
 }
