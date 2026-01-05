@@ -17,10 +17,17 @@ window.addEventListener("DOMContentLoaded",function() {
   for(let i=0;i<10;i++){
     x = rnd(-25,25);
     z = rnd(-25,25);
+    ammo_boxes.push(new Ammo(x,z));
+  }
+  
+  for(let i=0;i<10;i++){
+    x = rnd(-25,25);
+    z = rnd(-25,25);
     enemies.push(new Monster(x,5,z));
   }
   
   setTimeout(loop,100);
+  setTimeout(a,100);
   setTimeout(countdown,100);
 })
 
@@ -46,12 +53,24 @@ function loop(){
     bullet.fire();
   }
 
-
   window.requestAnimationFrame(loop);
 }
 
-function countdown(){
+function a(){
 
+  for(let ammo of ammo_boxes){
+    ammo.reload();
+    if(distance(camera,ammo.obj)<3){
+      ammo.collide = true;
+    }else{
+      ammo.collide = false
+    }
+  }
+  
+  window.requestAnimationFrame(a);
+}
+function countdown(){
+  
   setTimeout(countdown,1000);
 }
 
